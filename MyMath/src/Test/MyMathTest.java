@@ -1,19 +1,18 @@
 package Test;
-
 import mymath.MyMath;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import mymath.MyMath;
+
 
 public class MyMathTest {
 
 	@Test
-	public void test() {
+	public void testMulti() {
 		MyMath test = new MyMath();
-		
-		assertEquals(50,test.multi(5,10));
+			int output = test.multi(5, 4);
+			assertEquals(output, 20);
 	}
 
 }
