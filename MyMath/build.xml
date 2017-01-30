@@ -21,6 +21,7 @@
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src">
+                <exclude name="**/*.launch"/>
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
@@ -52,11 +53,11 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="MyMathTest">
+    <target name="MyMathTest1">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="Test.MyMathTest" todir="${junit.output.dir}"/>
+            <test name="Test.MyMathTest1" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
             <classpath refid="Ant-Tut.classpath"/>
         </junit>
