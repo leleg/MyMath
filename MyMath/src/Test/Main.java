@@ -6,7 +6,7 @@ public class Main {
 	
 	public static void main(String[] args){
 		MyMath mymath = new MyMath();
-		System.out.println("Result: " + Math.multiplyExact(5, 4));
+		System.out.println("Result: " + mymath.multi(5, 4));
 		
 	}
 

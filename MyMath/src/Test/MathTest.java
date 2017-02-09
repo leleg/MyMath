@@ -12,8 +12,8 @@ public class MathTest {
 	@Test
 	public void testMulti() {
 		MyMath test = new MyMath();
-			int output = test.multi(5, 6);
-			assertEquals(30, output);
+			
+			assertEquals(30, test.multi(5,5));
 	}
 
 }
